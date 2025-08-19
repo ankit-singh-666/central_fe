@@ -1,0 +1,28 @@
+/* LoginWithGoogle.module.css */
+
+.loginButton {
+    background-color: #1a73e8;
+    color: #ffffff;
+    font-size: 1.1rem;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 280px;
+    box-shadow: 0 4px 12px rgba(26, 115, 232, 0.3);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    user-select: none;
+}
+
+.loginButton:hover,
+.loginButton:focus {
+    background-color: #1669c1;
+    box-shadow: 0 6px 16px rgba(22, 105, 193, 0.5);
+    outline: none;
+}
+
+.loginButton:active {
+    background-color: #134a8e;
+    box-shadow: 0 2px 6px rgba(19, 74, 142, 0.7);
+}
