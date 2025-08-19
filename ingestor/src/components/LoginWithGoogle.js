@@ -1,0 +1,20 @@
+// src/components/LoginWithGoogle.js
+
+import React from "react";
+
+const BACKEND_LOGIN_URL = "http://localhost:8000/auth/login";
+
+
+function LoginWithGoogle() {
+    const handleClick = () => {
+        window.location.href = BACKEND_LOGIN_URL;
+    };
+
+    return (
+        <button onClick={handleClick}>
+            Login with Google
+        </button>
+    );
+}
+
+export default LoginWithGoogle;
