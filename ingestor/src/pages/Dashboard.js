@@ -1,6 +1,7 @@
 import React from "react";
 import { useAuth } from "../hooks/userAuth";
 import LoginWithGoogle from "../components/LoginWithGoogle";
+import Home from "./Home";
 
 function Dashboard() {
     const { user, loading } = useAuth();
@@ -9,7 +10,7 @@ function Dashboard() {
 
     if (!user) return <LoginWithGoogle />;
 
-    return <div>Logged in! Token: {user.token}</div>;
+    return <div><Home/></div>;
 }
 
 export default Dashboard;
