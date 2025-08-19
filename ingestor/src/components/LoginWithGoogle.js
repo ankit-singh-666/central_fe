@@ -4,14 +4,13 @@ import React from "react";
 
 const BACKEND_LOGIN_URL = "http://localhost:8000/auth/login";
 
-
 function LoginWithGoogle() {
-    const handleClick = () => {
+    const handleLogin = () => {
         window.location.href = BACKEND_LOGIN_URL;
     };
 
     return (
-        <button onClick={handleClick}>
+        <button onClick={handleLogin}>
             Login with Google
         </button>
     );
